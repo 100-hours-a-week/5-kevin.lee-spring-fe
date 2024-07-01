@@ -1,0 +1,14 @@
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.post h2 {
+    margin: 0 0 10px 0;
+}
+
+.post p {
+    margin: 5px 0;
+}

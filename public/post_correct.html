@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/post_correct.css">
+    <title>게시글 수정</title>
+</head>
+<body>
+    <header class="header">
+        <img id="backward" class= "navigate_icon" src="/img/navigate_before.svg"></img>
+        <p class="title">아무 말 대잔치</p>
+        <div class="dropdown">
+            <img class="profile_img" src="/img/profile_img.jpg"/>
+            <div class="dropdown_content">
+                <a class="dropdown_dc" id="dropdonw_dc1" href="http://localhost:3000/user/edit_profile">회원정보수정</a>
+                <a class="dropdown_dc" id="dropdonw_dc2" href="http://localhost:3000/user/edit_pw">비밀번호수정</a>
+                <a class="dropdown_dc" id="dropdonw_dc3" href="">로그아웃</a>
+            </div>
+        </div>
+    </header>
+    <hr class="horizontal-rule1"/>
+    <section class="wrap">
+        <div class="title_category">게시글 수정</div>
+
+        <div id="post_container">
+            
+        </div>
+        <button id="post_correct_btn">수정하기</button>
+    </section>
+
+    <script src="/post_correct.js"></script>
+</body>
+</html>

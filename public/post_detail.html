@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/post_detail.css">
+    <title>게시글 상세 조회</title>
+</head>
+<body>
+    <header class="header">
+        <img id= "navigate_icon" src="/img/navigate_before.svg"></img>
+        <p class="title">아무 말 대잔치</p>
+        <div class="dropdown">
+            <img class="profile_img" src="/img/profile_img.jpg"/>
+            <div class="dropdown_content">
+                <a class="dropdown_dc" id="dropdonw_dc1" href="http://localhost:3000/user/edit_profile">회원정보수정</a>
+                <a class="dropdown_dc" id="dropdonw_dc2" href="http://localhost:3000/user/edit_pw">비밀번호수정</a>
+                <a class="dropdown_dc" id="dropdonw_dc3" href="">로그아웃</a>
+            </div>
+        </div>
+    </header>
+    <hr class="horizontal-rule1"/>
+    <section class="wrap">
+        <div id="post">
+        </div>
+        <hr class="horizontal-rule2"/>
+        <form class="comments_category">
+            <textarea placeholder="댓글을 남겨주세요!" id="comments_input"></textarea>
+            <hr id="comments_hr" class="horizontal-rule1/">
+            <button id="comments_btn" disabled>댓글 등록</button>
+        </form>
+        <div id="comments_container" class="comments_list_category">
+           
+        </div>
+    </section>
+
+    <div id="postDelete_container" class="hidden">
+        <div class="modal">
+            <div class="modal_body">
+                <div><p class="modal_intro1">게시글을 삭제하시겠습니까?</p></div>
+                <div><p class="modal_intro2">삭제된 내용은 복구 할 수 없습니다.</p></div>
+                <div class="modal_btn">
+                    <button id="postDelete_cancel">취소</button>
+                    <button id="postDelete_confirm">확인</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <div id="commantDelete_container" class="hidden">
+        <div class="modal">
+            <div class="modal_body">
+                <div><p class="modal_intro1">댓글을 삭제하시겠습니까?</p></div>
+                <div><p class="modal_intro2">삭제한 내용은 복구 할 수 없습니다.</p></div>
+                <div class="modal_btn">
+                    <button id="commantDelete_cancel">취소</button>
+                    <button id="commantDelete_confirm">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/post_detail.js"></script>
+</body>
+</html>
+
+ <!-- <div class="comments_list1">
+                <div class="comments_list1_img"></div>
+                <div class="comments_list1_creator_bundle">
+                    <p class="comments_list1_creator_name">
+                        더미 작성자1
+                    </p>
+                    <p id="comments_list1_creator_content">
+                        댓글 내용
+                    </p>
+                </div>
+                <div class="comments_list1_date">2021-01-01 00:00:00</div>
+                <div class="comments_list1_modifi">
+                    <button class="comment_correctBtn" id="comments_list1_correctBtn">수정</button>
+                    <button class="comment_deleteBtn" id="comments_lsit1_deleteBtn">삭제</button>
+                </div>
+            </div>
+
+            <div class="comments_list2">
+                <div class="comments_list2_img"></div>
+                <div class="comments_list2_creator_bundle">
+                    <p class="comments_list2_creator_name">
+                        더미 작성자1
+                    </p>
+                    <p class="comments_list2_creator_content">
+                        댓글 내용
+                    </p>
+                </div>
+                <div class="comments_list2_date">2021-01-01 00:00:00</div>
+            </div>
+            <div class="comments_list3">
+                <div class="comments_list3_img"></div>
+                <div class="comments_list3_creator_bundle">
+                    <p class="comments_list3_creator_name">
+                        더미 작성자1
+                    </p>
+                    <p class="comments_list3_creator_content">
+                        댓글 내용
+                    </p>
+                </div>
+                <div class="comments_list3_date">2021-01-01 00:00:00</div>
+            </div> -->

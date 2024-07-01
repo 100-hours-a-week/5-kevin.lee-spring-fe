@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/signup.css">
+    <title>회원가입</title>
+</head>
+<body>
+    <header class="header">
+        <img id= "navigate_icon" src="/img/navigate_before.svg"></img>
+        <p class="title">아무 말 대잔치</p>
+        <div class="dropdown">
+            <img class="profile_img" src="/img/profile_img.jpg"/>
+            <div class="dropdown_content">
+                <a class="dropdown_dc" id="dropdonw_dc1" href="http://localhost:3000/user/edit_profile">회원정보수정</a>
+                <a class="dropdown_dc" id="dropdonw_dc2" href="http://localhost:3000/user/edit_pw">비밀번호수정</a>
+                <a class="dropdown_dc" id="dropdonw_dc3" href="">로그아웃</a>
+            </div>
+        </div>
+    </header>
+    <section class="wrap">
+        <p class="signup">회원가입</p>
+        <form  class="typingArea" id="input_submit" method="post" action="http://localhost:4000/users/signup">
+            <div class="profile">
+                <p class="profile_txt">프로필 사진</p>
+                <p id="porfileImg_helper" class="helper_text">* helper</p>
+                <input type="file" id="file_input" name="img_file" accept="image/*" style="display: none;">
+                <label for="file_input">
+                    <img id="insert_img" src="/img/insert_img.png" />
+                </label>
+            </div>
+            <p class="typeTxt" id="email">이메일</p>
+            <input class="input" autocomplete="off" type="email" name="email" id="eInput" placeholder="이메일을 입력하세요" required></input>
+            <p id="email_helper"class="helper_text">* helper</p>
+            <p class="typeTxt" id="pw">비밀번호</p>
+            <input class="input" autocomplete="off" type="password" name="password" id="pInput" placeholder="비밀번호를 입력하세요" required></input>
+            <p id="pw_helper"class="helper_text">* helper</p>
+            <p class="typeTxt" id="rePw">비밀번호 확인</p>
+            <input class="input" autocomplete="off" type="password" name="rePassword" id="rpInput" placeholder="비밀번호를 한번 더입력하세요" required></input>
+            <p id="rePw_helper"class="helper_text">* helper</p>
+            <p class="typeTxt"  id="nickName">닉네임</p>
+            <input class="input" type="text" id="nInput" name="nickname" placeholder="닉네임을 입력하세요" required></input>
+            <p id="nickname_helper"class="helper_text">* helper</p>
+            <input type="submit" id="signup_btn" value="회원가입" disabled></input>
+
+        </form>
+        <button id="login_btn">로그인하러 가기</button>
+    </section>
+
+    <script  type="module" src="/signup.js"></script>
+</body>
+</html>
